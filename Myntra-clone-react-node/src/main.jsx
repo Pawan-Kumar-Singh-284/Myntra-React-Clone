@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./routes/App.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css";
+
 import Bag from "./routes/Bag.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./routes/Home.jsx";
 import { Provider } from "react-redux";
-import myntraStore from "../public/store/index.js";
+import myntraStore from "./store/index.js";
 
 const router = createBrowserRouter([
   {
